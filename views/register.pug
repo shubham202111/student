@@ -16,7 +16,7 @@ html
             tr 
                 td DOB: 
                 td 
-                    input(type='text',name='dob',size='20',required)
+                    input(type='date',name='dob',size='20',required)
             tr 
                 td Address: 
                 td 
@@ -32,11 +32,11 @@ html
             tr 
                 td Pin: 
                 td 
-                    input(type='text',name='pin',size='30')
+                    input(type='number',name='pin',min="6" max="6")
             tr 
                 td Phone: 
                 td 
-                    input(type='text',name='phone',size='10')
+                    input(type='number',name='phone',min="10" max="10")
             tr 
                 td Email: 
                 td 
@@ -44,7 +44,7 @@ html
             tr 
                 td Mark %: 
                 td 
-                    input(type='text',name='mark_per',size='10')
+                    input(type='number',name='mark_per')
             tr 
                 td Class: 
                 td 
