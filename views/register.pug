@@ -1,0 +1,61 @@
+doctype html 
+html 
+    head 
+        title Student Registration 
+    body 
+        form(method='GET',action='/handleForm',name='registrationform')
+        table 
+            tr 
+                td Student Name: 
+                td 
+                    input(type='text',name='student_name',size='20',required)
+            tr 
+                td Father Name: 
+                td 
+                    input(type='text',name='father_name',size='20',required)
+            tr 
+                td DOB: 
+                td 
+                    input(type='text',name='dob',size='20',required)
+            tr 
+                td Address: 
+                td 
+                    input(type='text',name='address',size='30')
+            tr 
+                td City: 
+                td 
+                    input(type='text',name='city',size='15')
+            tr 
+                td State: 
+                td 
+                    input(type='text',name='state',size='15')
+            tr 
+                td Pin: 
+                td 
+                    input(type='text',name='pin',size='30')
+            tr 
+                td Phone: 
+                td 
+                    input(type='text',name='phone',size='10')
+            tr 
+                td Email: 
+                td 
+                    input(type='text',name='email',size='15')
+            tr 
+                td Mark %: 
+                td 
+                    input(type='text',name='mark_per',size='10')
+            tr 
+                td Class: 
+                td 
+                    select(name="class") 
+                        option(value='0') Select Class
+                        option(value='8') 8th
+                        option(value='9') 9th
+                        option(value='10') 10th
+                        option(value='11') 11th
+                        option(value='12') 12th
+            tr 
+                td(colspan='2',align='right')
+                    input(type='submit',value='save')
+            
